@@ -7,7 +7,9 @@ This report presents the analysis of the most streamed songs on Spotify, includi
 - visualization along with explanations and interpretations of the results.
 
 **Data Handling**
+
 Code Snippet:
+
 spotify_data = pd.read_csv('Spotify_Most_Streamed_Songs.csv')
 
 cleaned_data = cleaned_data.drop_duplicates()
@@ -16,6 +18,7 @@ The dataset containing Spotify's most streamed songs is loaded into a pandas Dat
 
 
 **Data Exploration**
+
 Code Snippet:
 
 spotify_data['streams'] = pd.to_numeric(spotify_data['streams'], errors='coerce')
@@ -25,3 +28,9 @@ I ensured that the streams column is in numeric format, converting any invalid e
 The rows with missing stream data were dropped using dropna, as incomplete data would affect the accuracy of the analysis.
 
 All rows with missing or invalid stream data have been removed, leaving clean and valid data for further analysis.
+
+
+**Data Manipulation and Analysis**
+
+
+
